@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-16 21:39:58.226356",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "consignment_no",
+  "warehouse",
+  "net_weight",
+  "column_break_xgle",
+  "quantity",
+  "unit_weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "consignment_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Consignment No",
+   "options": "Batch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Net Weight",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xgle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "consignment_no.batch_qty",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "unit_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit Weight",
+   "non_negative": 1,
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-16 21:47:48.832254",
+ "modified_by": "Administrator",
+ "module": "Warehousing",
+ "name": "Cargo Owner Transfer Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-16 21:49:22.297859",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "batch",
+  "warehouse",
+  "column_break_evci",
+  "release_qty",
+  "unit_weight",
+  "net_weight",
+  "column_break_javr",
+  "package_type",
+  "package_qty",
+  "item",
+  "column_break_yyom",
+  "release_weight",
+  "stock_entry_reference",
+  "serial_and_batch_bundle",
+  "column_break_wnvz",
+  "receipt_document",
+  "entry_no",
+  "section_break_upok",
+  "storage_weeks",
+  "column_break_iihx",
+  "billable_weeks"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Batch",
+   "options": "Batch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_evci",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "release_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Devilery Qty",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit Weight",
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Float",
+   "label": "Net Weight",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_javr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "package_type",
+   "fieldtype": "Link",
+   "label": "Package Type",
+   "options": "UOM",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "package_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No of Packages",
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yyom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "release_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Release Weight",
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "stock_entry_reference",
+   "fieldtype": "Data",
+   "label": "Stock Entry Reference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "serial_and_batch_bundle",
+   "fieldtype": "Data",
+   "label": "Serial and Batch Bundle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wnvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receipt_document",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Receipt Document",
+   "read_only": 1
+  },
+  {
+   "fieldname": "entry_no",
+   "fieldtype": "Data",
+   "label": "Transit Entry No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_upok",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "storage_weeks",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Storage Weeks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_iihx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "billable_weeks",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Billable Weeks",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-16 22:35:22.517057",
+ "modified_by": "Administrator",
+ "module": "Warehousing",
+ "name": "Cargo Delivery Note Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

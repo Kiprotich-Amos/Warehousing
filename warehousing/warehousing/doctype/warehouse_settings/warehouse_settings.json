@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-16 23:43:10.447287",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "auto_generate_sales_order",
+  "sb1",
+  "default_producer_grace_period",
+  "column_break_nene",
+  "default_buyer_grace_period",
+  "sb2",
+  "default_grace_period"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "description": "Automatically generate a sales order for each service",
+   "fieldname": "auto_generate_sales_order",
+   "fieldtype": "Check",
+   "label": "Auto Generate Sales Order"
+  },
+  {
+   "fieldname": "sb1",
+   "fieldtype": "Section Break",
+   "label": "Tea Clients' Grace Periods"
+  },
+  {
+   "default": "7",
+   "description": "Default Producer grace period in weeks",
+   "fieldname": "default_producer_grace_period",
+   "fieldtype": "Int",
+   "label": "Default Producer Grace Period"
+  },
+  {
+   "fieldname": "column_break_nene",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "description": "Default Buyer grace period in weeks",
+   "fieldname": "default_buyer_grace_period",
+   "fieldtype": "Int",
+   "label": "Default Buyer Grace Period"
+  },
+  {
+   "fieldname": "sb2",
+   "fieldtype": "Section Break",
+   "label": "Cargo Clients' Grace Periods"
+  },
+  {
+   "description": "Default cargo Client grace period in weeks",
+   "fieldname": "default_grace_period",
+   "fieldtype": "Int",
+   "label": "Default Grace Period"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-05-16 23:48:06.553613",
+ "modified_by": "Administrator",
+ "module": "Warehousing",
+ "name": "Warehouse Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
