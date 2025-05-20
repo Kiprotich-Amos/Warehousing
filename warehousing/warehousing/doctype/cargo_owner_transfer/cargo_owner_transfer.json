@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-05-19 12:14:24.311633",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rxt7",
+  "naming_series",
+  "transfer_date",
+  "contract_reference",
+  "column_break_cezb",
+  "client",
+  "client_name",
+  "column_break_qdar",
+  "buyer",
+  "buyer_name",
+  "section_break_rjsu",
+  "remarks",
+  "amended_from",
+  "transfer_items_tab",
+  "transfer_items",
+  "section_break_yokw",
+  "total_quantity",
+  "total_net_weight",
+  "tb1",
+  "tea_private_sale_bill_item",
+  "section_break_vvgq",
+  "sales_order_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rxt7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cargo Owner Transfer",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "transfer_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transfer Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_reference",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Contract Reference"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": " Client",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "client.customer_name",
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_rjsu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "depends_on": "eval:doc.buyer_buyer_sale == 1",
+   "fetch_from": "buyer.customer_name",
+   "fieldname": "buyer_name",
+   "fieldtype": "Data",
+   "label": "Buyer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transfer_items_tab",
+   "fieldtype": "Tab Break",
+   "label": "Transfer items"
+  },
+  {
+   "fieldname": "transfer_items",
+   "fieldtype": "Table",
+   "label": "Transfer items",
+   "options": "Cargo Owner Transfer Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_yokw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Int",
+   "label": "Total Quantity",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_net_weight",
+   "fieldtype": "Float",
+   "label": "Total Net Weight",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "tb1",
+   "fieldtype": "Tab Break",
+   "label": "Bill Item"
+  },
+  {
+   "description": "If enabled in Warehouse settings, a Sales Order with these Items will automatically be generated for billing",
+   "fieldname": "tea_private_sale_bill_item",
+   "fieldtype": "Table",
+   "options": "Tea Private Sale Bill Item"
+  },
+  {
+   "fieldname": "section_break_vvgq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sales_order_reference",
+   "fieldtype": "Link",
+   "label": "Sales Order Reference",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "column_break_cezb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qdar",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "WH-COT-.YY.MM.-",
+   "print_hide": 1,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-19 12:44:55.193449",
+ "modified_by": "Administrator",
+ "module": "Warehousing",
+ "name": "Cargo Owner Transfer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -4,11 +4,14 @@ app_publisher = "Amos Kiprotich Rono"
 app_description = "Warehousing System Management"
 app_email = "kiprotichamoh11@gmail.com"
 app_license = "mit"
+app_home = "/warehousing"
 
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = [
+    {"erpnext": "erpnext"}
+]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -16,17 +19,15 @@ app_license = "mit"
 # 		"name": "warehousing",
 # 		"logo": "/assets/warehousing/logo.png",
 # 		"title": "Warehousing",
-# 		"route": "/warehousing",
+# 		"route": app_home ,
 # 		"has_permission": "warehousing.api.permission.has_app_permission"
 # 	}
 # ]
 
 # Includes in <head>
-# ------------------
-
 # include js, css files in header of desk.html
-# app_include_css = "/assets/warehousing/css/warehousing.css"
-# app_include_js = "/assets/warehousing/js/warehousing.js"
+app_include_css = "/assets/warehousing/css/warehousing.css"
+app_include_js = "/assets/warehousing/js/warehousing.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/warehousing/css/warehousing.css"

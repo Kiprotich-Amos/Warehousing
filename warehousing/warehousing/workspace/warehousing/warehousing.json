@@ -1,0 +1,65 @@
+{
+ "app": "warehousing",
+ "charts": [],
+ "content": "[{\"id\":\"_8xD0ClWhU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Warehousing</span>\",\"col\":12}},{\"id\":\"oEUWFMTRyD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"3T96KzSMLL\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">General Cargo Shortcuts</span>\",\"col\":12}},{\"id\":\"SrCtSf3bTy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cargo Stock Receipt\",\"col\":3}},{\"id\":\"rZULa2h4fx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cargo Warehouse Release\",\"col\":3}},{\"id\":\"U6-NruTciq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cargo Delivery Note\",\"col\":3}},{\"id\":\"9H9-Led-CA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cargo Owner Transfer\",\"col\":3}}]",
+ "creation": "2025-05-20 11:20:44.579703",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "stock",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Warehousing",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-05-20 11:58:51.101128",
+ "modified_by": "Administrator",
+ "module": "Warehousing",
+ "name": "Warehousing",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 24.0,
+ "shortcuts": [
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Cargo Stock Receipt",
+   "link_to": "Cargo Stock Receipt",
+   "stats_filter": "[[\"Cargo Stock Receipt\",\"docstatus\",\"=\",\"0\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cargo Warehouse Release",
+   "link_to": "Cargo Warehouse Release",
+   "stats_filter": "[[\"Cargo Warehouse Release\",\"docstatus\",\"=\",\"0\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Cargo Delivery Note",
+   "link_to": "Cargo Delivery Note",
+   "stats_filter": "[[\"Cargo Delivery Note\",\"docstatus\",\"=\",\"0\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Cargo Owner Transfer",
+   "link_to": "Cargo Owner Transfer",
+   "stats_filter": "[[\"Cargo Owner Transfer\",\"docstatus\",\"=\",\"0\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Warehousing",
+ "type": "Workspace"
+}

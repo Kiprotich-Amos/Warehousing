@@ -1,0 +1,284 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-05-19 11:20:09.353308",
+ "description": "Tea Delivery Note",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sfdz",
+  "naming_series",
+  "customer",
+  "warehouse_release",
+  "customer_name",
+  "column_break_nmon",
+  "delivery_date",
+  "posting_date1",
+  "consignee",
+  "consignee_address",
+  "destination",
+  "tb1",
+  "delivery_note_items",
+  "references_section",
+  "stock_entry_reference",
+  "column_break_owkf",
+  "sales_order_reference",
+  "summary_section",
+  "total_delivery_qty",
+  "column_break_bcez",
+  "total_net_weight",
+  "column_break_hziw",
+  "total_net_weight_tonnes",
+  "amended_from",
+  "tb2",
+  "truck_reg_no",
+  "driver_name",
+  "column_break_sfky",
+  "trailer_reg_no",
+  "driver_id",
+  "section_break_ityq",
+  "cargo_delivery_note",
+  "transporter",
+  "tb3",
+  "cargo_delivery_note_bill_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sfdz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cargo Delivery Note",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "WH-CDN-.YY.-.MM.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "On Account Of",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse_release",
+   "fieldtype": "Data",
+   "label": "Warehouse Release",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nmon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consignee",
+   "fieldtype": "Link",
+   "label": "Consignee",
+   "options": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consignee_address",
+   "fieldtype": "HTML",
+   "label": "Consignee Address"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "label": "Destination"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date1",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tb1",
+   "fieldtype": "Tab Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "delivery_note_items",
+   "fieldtype": "Table",
+   "label": "Delivery Note Items",
+   "options": "Cargo Delivery Note Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "references_section",
+   "fieldtype": "Section Break",
+   "label": "References Section"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "stock_entry_reference",
+   "fieldtype": "Link",
+   "label": "Stock Entry Reference",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_owkf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales_order_reference",
+   "fieldtype": "Data",
+   "label": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "total_delivery_qty",
+   "fieldtype": "Int",
+   "label": "Total Delivery Qty",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_net_weight",
+   "fieldtype": "Float",
+   "label": "Total Net Weight",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_net_weight_tonnes",
+   "fieldtype": "Float",
+   "label": "Total Net Weight Tonnes",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bcez",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hziw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tb2",
+   "fieldtype": "Tab Break",
+   "label": "Transportation"
+  },
+  {
+   "fieldname": "truck_reg_no",
+   "fieldtype": "Data",
+   "label": "Truck Reg No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sfky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trailer_reg_no",
+   "fieldtype": "Data",
+   "label": "Trailer Reg No"
+  },
+  {
+   "fieldname": "driver_id",
+   "fieldtype": "Data",
+   "label": "Driver ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ityq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cargo_delivery_note",
+   "fieldtype": "Table",
+   "label": "Cargo Delivery Note",
+   "options": "Cargo Delivery Note Container"
+  },
+  {
+   "fieldname": "transporter",
+   "fieldtype": "Link",
+   "label": "Transporter",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tb3",
+   "fieldtype": "Tab Break",
+   "label": "Bill Items"
+  },
+  {
+   "description": "If enabled in Warehouse settings, a Sales Order with these Items will automatically be generated for billing",
+   "fieldname": "cargo_delivery_note_bill_item",
+   "fieldtype": "Table",
+   "options": "Cargo Delivery Note Bill Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-19 12:05:13.935865",
+ "modified_by": "Administrator",
+ "module": "Warehousing",
+ "name": "Cargo Delivery Note",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
