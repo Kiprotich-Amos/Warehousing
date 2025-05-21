@@ -1,9 +1,13 @@
 {
  "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2025-05-17 08:51:34.961183",
  "doctype": "DocType",
+ "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
   "tb0",
@@ -401,7 +405,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-05-17 09:41:11.276205",
+ "modified": "2025-05-21 10:02:30.137286",
  "modified_by": "Administrator",
  "module": "Warehousing",
  "name": "Cargo Stock Receipt",
