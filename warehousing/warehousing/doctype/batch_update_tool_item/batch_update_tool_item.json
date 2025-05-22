@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-05-22 11:09:45.214854",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_no",
+  "package_type",
+  "column_break_rsrj",
+  "pallet_no",
+  "garden",
+  "package_qty",
+  "column_break_ptky",
+  "grade",
+  "warrant_no",
+  "amended_from",
+  "sb0",
+  "unit_weight",
+  "short_weight",
+  "column_break_xhob",
+  "pallet_weight",
+  "tare_weight",
+  "column_break_ipcn",
+  "scale_gross_weight",
+  "scale_net_weight",
+  "sb1",
+  "gross_weight",
+  "column_break_qsyw",
+  "net_weight",
+  "column_break_whku",
+  "warehouse",
+  "section_break_lczq",
+  "current_owner",
+  "entry_no",
+  "status",
+  "column_break_birm",
+  "lot_no",
+  "column_break_fnzg",
+  "boe_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Batch Update Tool Item",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice No",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "package_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Package Type",
+   "options": "Tea Package Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pallet_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pallet No",
+   "options": "Batch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "garden",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Garden",
+   "options": "Garden"
+  },
+  {
+   "fieldname": "package_qty",
+   "fieldtype": "Int",
+   "label": "No of Packages",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Grade",
+   "options": "Tea Grade",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warrant_no",
+   "fieldtype": "Data",
+   "label": "Warrant No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rsrj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ptky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb0",
+   "fieldtype": "Section Break",
+   "label": "Weights"
+  },
+  {
+   "fieldname": "unit_weight",
+   "fieldtype": "Float",
+   "label": "Unit Weight",
+   "reqd": 1
+  },
+  {
+   "fieldname": "short_weight",
+   "fieldtype": "Float",
+   "label": "Short Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pallet_weight",
+   "fieldtype": "Float",
+   "label": "Pallet Weight",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tare_weight",
+   "fieldtype": "Float",
+   "label": "Tare Weight",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "scale_gross_weight",
+   "fieldtype": "Float",
+   "label": "Scale Gross Weight",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scale_net_weight",
+   "fieldtype": "Float",
+   "label": "Scale Net Weight",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_xhob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ipcn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb1",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "gross_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gross Weight",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Net Weight",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_qsyw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_whku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lczq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "current_owner",
+   "fieldtype": "Link",
+   "label": "Current Owner",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entry_no",
+   "fieldtype": "Data",
+   "label": "Entry No",
+   "read_only": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nAllocated\nReprint\nPrivate Sale\nReleased",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_birm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lot_no",
+   "fieldtype": "Data",
+   "label": "Lot No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fnzg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "boe_no",
+   "fieldtype": "Data",
+   "label": "Boe No",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-22 11:37:47.017640",
+ "modified_by": "Administrator",
+ "module": "Warehousing",
+ "name": "Batch Update Tool Item",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

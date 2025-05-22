@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-22 10:46:40.562481",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_3wlv",
+  "garden",
+  "editing_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_3wlv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Batch Update",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "garden",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Garden",
+   "options": "Garden",
+   "reqd": 1
+  },
+  {
+   "fieldname": "editing_table",
+   "fieldtype": "Table",
+   "label": "Editing Table",
+   "options": "Batch Update Tool Item",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-22 11:57:50.685765",
+ "modified_by": "Administrator",
+ "module": "Warehousing",
+ "name": "Batch Update",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
